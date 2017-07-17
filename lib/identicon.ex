@@ -13,7 +13,7 @@ defmodule Identicon do
   end
   
   def pick_color(image) do
-    %Identicon.Image{hex: h[r, g , b | _tail]} = image
+    %Identicon.Image{hex: [r, g , b | _tail]} = image
         
     [r, g, b]
   end
